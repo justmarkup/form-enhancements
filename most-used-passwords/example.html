@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example | Form enhancements: Most used passwords</title>
+  <style>
+    body {
+      width: 900px;
+      max-width: 100%;
+      margin: 0 auto;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    label,
+    input {
+      display: block;
+    }
+
+    label {
+      margin: 0 0 4px 0;
+    }
+
+    input {
+      margin: 0 0 10px 0;
+    }
+
+    h1 {
+      font-weight: normal;
+    }
+
+    .warn {
+      background: #D31F32;
+      color: #fff;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form enhancements: Most used passwords</h1>
+
+  <p>Idea is to show a warning message as an enhancement to users if they use one of the most used, and therefore most unsafe passwords.</p>
+  
+  <p>The 25 most used passwords of 2015 are 123456, password, 12345678, qwerty, 12345, 123456789, football, 1234, 1234567, baseball, welcome, 1234567890, abc123, 111111, 1qaz2wsx, dragon, master, monkey, letmein, login, princess, qwertyuiop, solo, passw0rd, starwars</p>
+  
+  <p>Try to use one of them to see the warn message. </p>
+  
+  
+<form data-most-used-pw="true" action="/">
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username">
+  <label for="pw">Password</label>
+  <input id="pw" name="pw" type="password">
+  <input type="submit" value="Register">
+</form>
+<script src="most-used-passwords.js"></script>
+<script>
+  mostUsedPasswords.init();
+</script>
+</body>
+</html>
