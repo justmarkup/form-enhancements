@@ -127,7 +127,7 @@
         // append the warn message
         warnElement.className = settings.warnClasses;
         warnElement.appendChild(warnText);
-        this.insertBefore(warnElement, document.querySelector(settings.passwordElement);
+        this.insertBefore(warnElement, document.querySelector(settings.passwordElement));
         
         // prevent sending the form
         ev.preventDefault();
