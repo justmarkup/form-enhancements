@@ -6,13 +6,13 @@ JavaScript helpers to enhance a form.
 
 ### Include most-used-passwords.js on your site
 
-```
+```html
 <script src="most-used-passwords/most-used-passwords.js"></script>
 ```
 
 ### Initialize
 
-```
+```html
 <script>
   mostUsedPasswords.init();
 </script>
@@ -20,7 +20,7 @@ JavaScript helpers to enhance a form.
 
 ### Options
 
-```
+```html
 <script>
   mostUsedPasswords.init({
     formElement: '[data-most-used-pw="true"]', // Selector for the form (must be a valid CSS selector)
@@ -60,4 +60,4 @@ JavaScript helpers to enhance a form.
 
 ### Example
 
-You can find an working example at [most-used-passwords/example.html](https://github.com/justmarkup/form-enhancements/most-used-passwords/example.html)
+You can find an working example at [most-used-passwords/example.html](https://github.com/justmarkup/form-enhancements/blob/master/most-used-passwords/example.html)
